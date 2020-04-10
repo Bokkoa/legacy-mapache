@@ -1,0 +1,239 @@
+.mapache-icon{
+    width: 230%;
+    margin-left: -15px;
+}
+/* SOBREESCRIBIR el borde de las cards */
+.card.profile{
+  float: none; /* Added */
+  margin: 0 auto;
+  margin-bottom: 10px; /* Added */
+  border: none !important;
+}
+#sidebar{
+
+    margin-right: -25px !important;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#chartdiv{
+  border-style: outset; 
+  border-width: 4px; 
+  border-color: rgba(158, 222, 234, 0.56);
+  border-radius: 25px;
+}
+
+.avatar {
+  min-height: 100px;
+min-width: 100px;
+  border: 0px solid black;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+.avatar-min {
+  max-height: 40px;
+  max-width: 40px;
+  /* border: 1px solid black; */
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+/* AL PASAR EL CURSOR HACE BLUR */
+.imghvr-blur figcaption {
+  opacity: 0;
+}
+
+.imghvr-blur:hover > img {
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
+.imghvr-blur:hover figcaption {
+  opacity: 1;
+  transition-delay: 0.21s;
+}
+
+.btn-edit-image{
+  width: 10%;
+  transform: translate(550%, -60%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: 'Korean Calligraphy';
+    src: local("Korean Calligraphy"),
+         url("../font/Korean_Calligraphy.ttf") format('ttf');
+
+   font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Type Righter';
+    src: url("../font/typerighter.ttf") format('ttf');
+   font-weight: bold;
+}
+
+
+#map {
+   height: 100%;
+   background-color: black;
+ }
+
+#container{
+  min-height: 100%;
+}
+
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+#footer{
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
+  clear: both;
+}
+
+#contextMenu {
+  position: absolute;
+  display: none;
+}
+
+.navbar{
+  background-color: #A0DEEB;
+}
+.sidebar{
+  background-color: #A0DEEB;
+}
+
+.my-body{
+   background-color: #3973ac;
+}
+.my-button{
+  background-color: #99ddff;
+  color: black;
+  font-family: 'Slabo 27px', serif;
+}
+.my-text-body{
+  font-size: 25px
+}
+.my-hr {
+  border: 0;
+  height: 1px;
+  background-color: A0DEEB;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+.my-a-text{
+    color: #132639;
+}
+
+
+.my-footer{
+  background-color: #A3C6CA;
+  position: relative;
+  margin-top: -100px
+  
+}
+
+
+.my-dark-bg{
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  font-weight: 300;
+}
+.my-limits-bg{
+  background-color: #58ACFA;
+}
+.my-crystal-bg{
+  background: none;
+  background: rgba(219, 244, 251, 0.2)!important;
+}
+
+.my-scroll{
+  max-height: 700px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+.my-tcard {
+  background-color: rgba(245, 245, 245, 1);
+  opacity: .4;
+}
+
+ /* clases para las fuentes */
+.my-text-oxygen{
+  font-family: 'Oxygen', sans-serif;
+}
+.my-text-slabo{
+  font-family: 'Slabo 27px', serif;
+}
+.my-text-typeR{
+  font-family: 'Type Righter';
+}
+.my-text-k{
+  font-family: 'Korean Calligraphy';
+  font-size: 25px;
+}
+
+
+.vim-caret {
+  -webkit-animation: vimCaret 5s linear infinite;
+       -o-animation: vimCaret 5s linear infinite;
+          animation: vimCaret 5s linear infinite; }
+
+@-webkit-keyframes vimCaret {
+  0% {
+    background-color: rgba(0, 68, 102, 0.2); }
+  49% {
+    background-color: rgba(0, 170, 255, 0.2); }
+  50% {
+    background-color: rgba(102, 204, 255, 0.2); }
+  100% {
+    background-color: rgba(179, 230, 255, 0.2); } }
+
+@-o-keyframes vimCaret {
+  0% {
+    background-color: rgba(0, 68, 102, 0.2); }
+  49% {
+    background-color: rgba(0, 170, 255, 0.2); }
+  50% {
+    background-color: rgba(102, 204, 255, 0.2); }
+  100% {
+    background-color: rgba(0, 68, 102, 0.2); } }
+
+@keyframes vimCaret {
+  0% {
+    background-color: rgba(255,113,206, 0.2); }
+  49% {
+    background-color: rgba(5,255,161, 0.2); }
+  50% {
+    background-color: rgba(185,103,255, 0.2); }
+  100% {
+    background-color: rgba(0, 68, 102, 0.2); } }
+
+    .active> a,
+    .active> a:focus,
+    .active> a:hover {
+      background: none;
+      background: rgba(53, 167, 171, 0.6)!important;
+      border-radius: 25px;/* Anything you want */
+    }
+

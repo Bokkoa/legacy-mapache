@@ -1,0 +1,40 @@
+Trasladarse a la carpeta
+		cd ..\Mapache\Mapache
+Ingresar las siguientes lineas de comando
+		composer install (se necesita haber instalado composer previamente en windows)
+		copy .env.example .env
+		php artisan key:generate
+
+Realizar las migraciones a la base de datos (si no existe, crear una base de datos con el nombre de 'mapache', usa mysql)
+
+	Ingresar el comando
+		php artisan migrate
+
+	Correr el servidor en caso de querer hacerlo 
+		php artisan serve
+	
+
+
+Correr el crawler manualmente (se necesita haber instalado la base de datos y haber migrado las tablas en laravel)
+
+Activación del entorno virtal
+	Trasladarse a la carpeta y teclear activate
+		"cd ../mapache/crawler/virtualcrawl/Scripts && activate"
+	Volver a la carpeta 
+		"\mapache\Crawler\" 
+	Teclear 
+		scrapy crawl login
+
+	+=================+
+	| Modificar rutas |
+	+=================+
+
+Se necesita adaptar las siguientes rutas correspondientes en los archivos siguientes:
+	"Mapache\app\Http\Controllers\SubjectController.php"
+		lineas 41, 42 y 47
+	
+	"Crawler\mapacheCrawler\pipelines.py"
+		lineas 32, 35, 136 y 145
+
+	"Crawler\mapacheCrawler\spiders\login.py"
+		lineas 39
